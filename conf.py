@@ -117,6 +117,9 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
+html_theme_options = {
+    'logo_only': True
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -130,7 +133,26 @@ html_theme = 'sphinx_rtd_theme'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+# html_logo = None
+html_logo = "logo.png"
+#html_style = "css/custom.css"
+
+
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+if not on_rtd:  # only import and set the theme if we're building docs locally
+  import sphinx_rtd_theme
+  html_theme = 'sphinx_rtd_theme'
+  html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+  html_style = 'css/custom.css'
+else:
+  html_context = { 
+    'css_files': [
+        'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
+        'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
+        '_static/css/custom.css',
+    ],  
+  } 
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -173,6 +195,7 @@ html_last_updated_fmt = '%b %d, %Y'
 
 # If true, links to the reST sources are added to the pages.
 #html_show_sourcelink = True
+html_show_sourcelink = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 html_show_sphinx = False

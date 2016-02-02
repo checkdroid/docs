@@ -214,3 +214,8 @@ pseudoxml:
 	$(SPHINXBUILD) -b pseudoxml $(ALLSPHINXOPTS) $(BUILDDIR)/pseudoxml
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
+
+
+# make auto -- starts sphinx in watch mode
+auto:
+	sphinx-autobuild . _build/html

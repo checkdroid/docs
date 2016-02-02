@@ -1,9 +1,9 @@
 .. CheckDroid documentation master file
 
-CheckDroid
+CheckDroid Docs
 ====================================================
 
-Welcome to CheckDroid Docs!
+Welcome to our docs site! Here you will find information about our tools and services for **creation** and **execution** of Android tests.
 
 
 .. toctree::
