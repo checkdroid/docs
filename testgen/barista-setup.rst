@@ -1,10 +1,10 @@
-Barista setup instructions
---------------------------
+Getting started with Barista
+----------------------------
 
-Getting Barista running on your device is easy! Here we walk you through the basic steps to get Barista on your device.
+Setting up Barista on your device and creating your first test is easy! Here we walk you through the basic steps.
 
 
-1. Install our application from the Google play store on any device running Android 4.4 Kitkat of above. 
+1. Install our application from the Google play store on any device running Android 4.4+. We currently support it on 4.4 (Kitkat) and 5.0 (Lollipop).
   .. raw:: html
 
       <a href="https://play.google.com/store/apps/details?id=com.checkdroid.barista&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" width="150px"/></a>
@@ -29,13 +29,19 @@ Getting Barista running on your device is easy! Here we walk you through the bas
 
 6. At any point, you can add assertions (checks) by tapping on Barista and selecting "Add Checks". 
 
+  .. image:: check.gif
+    :width: 250px
+
 7. Once you're finished, you can tap on Barista and select "Finish Test"
 
 8. You see the actions recorded by Barista. You can upload the test by signing in with your Google account.
+   
+  .. image:: preview.png
+    :width: 200px
 
-9. The tests are emailed to your GMail address and can also be downloaded from our website or using our gradle plugin. details  
+9. The tests are emailed to your GMail address and can also be downloaded from our website or using our gradle plugin. [ Details_ ]  
 
-Instructions for running the test are at http://checkdroid.com/barista
+.. _Details: /testgen/index.html#getting-your-tests
 
 
 .. toctree::
